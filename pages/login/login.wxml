@@ -6,7 +6,11 @@
       
   </view>
   <view class="usermotto">
-    <canvas class='lockCanvas' canvas-id="lockCanvas" style='width:{{canvasW}}px; height:{{canvasH}}px;'       
-    binderror="canvasIdErrorCallback" bindtouchstart='canvasTouchStart' bindtouchmove='canvasTouchMove' bindtouchend='canvasTouchEnd' bindtouchcancel='canvasTouchEnd'  disable-scroll='true'></canvas>
+  <canvas canvas-id="canvasLock" class="mycanvas"     
+      bindtouchend="onTouchend"
+      bindtouchstart="onTouchstart" bindtouchmove="onTouchmove"  
+      binderror="canvasIdErrorCallback"
+      disable-scroll='true'>
+  </canvas>
   </view>
 </view>

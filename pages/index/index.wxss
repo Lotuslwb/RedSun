@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.enter-btn{
+  margin-top: 20px;
+  width: 90%;
+}

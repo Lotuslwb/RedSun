@@ -1,0 +1,15 @@
+<!--pages/picList/picList.wxml-->
+<button type='primary' plain='true' class='uploadImg' bindtap='bindUploadImage'>上传图片</button>
+<scroll-view scroll-y='true'	 class='picList' enable-back-to-top='true'>
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{picList}}" wx:key="unique" >
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+    
+    <image class='picList-item' src='{{item.src}}' 
+      data-src='{{item.src}}' mode='widthFix'
+      bindtap='bindPreviewImage'
+      >
+      </image>
+  </label>
+</checkbox-group>
+</scroll-view>
